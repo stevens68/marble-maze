@@ -1,0 +1,9 @@
+
+
+Logs/
+obj/
+Library/
+Temp/
+myvenv/
+.vs/
+UserSettings/

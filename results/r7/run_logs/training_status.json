@@ -1,0 +1,47 @@
+{
+    "MarbleMazeWalk": {
+        "checkpoints": [
+            {
+                "steps": 13522923,
+                "file_path": "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13522923.onnx",
+                "reward": 159.61835193634033,
+                "creation_time": 1695232020.8466942,
+                "auxillary_file_paths": [
+                    "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13522923.pt"
+                ]
+            },
+            {
+                "steps": 13561794,
+                "file_path": "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13561794.onnx",
+                "reward": 201.76273015638193,
+                "creation_time": 1695232074.17175,
+                "auxillary_file_paths": [
+                    "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13561794.pt"
+                ]
+            },
+            {
+                "steps": 13589150,
+                "file_path": "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13589150.onnx",
+                "reward": 116.44301433563233,
+                "creation_time": 1695234356.6118238,
+                "auxillary_file_paths": [
+                    "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13589150.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 13589150,
+            "file_path": "results\\r7\\MarbleMazeWalk.onnx",
+            "reward": 116.44301433563233,
+            "creation_time": 1695234356.6118238,
+            "auxillary_file_paths": [
+                "results\\r7\\MarbleMazeWalk\\MarbleMazeWalk-13589150.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
