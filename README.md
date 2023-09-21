@@ -12,8 +12,8 @@ In this project a model can be trained to tilt the two planes of a maze, so that
 
 ### requirements
 
-I've run the follwoing step on Windows 11 with the follwing setup.
-- git clone of this repo
+I used the following setup on Windows 11:
+- clone of this repo
 - Unity Hub 3.5.2 + Unity Editor 2022.03.9f1
 - Unity Asset [15 Original Wood Texture]("https://assetstore.unity.com/packages/2d/textures-materials/wood/15-original-wood-texture-71286")
 - Python 3.9.6
@@ -24,14 +24,14 @@ I've run the follwoing step on Windows 11 with the follwing setup.
 
 - clone this repository:<br>`git clone https://github.com/stevens68/marble-maze.git`
 
-### Open the project in Unity
+#### Open the project in Unity
 - Start Unity Hub and select `Installs`
 - Install Unity Editor 2022.039f1 if necessary
 - Select `Projects`
 - Click `Open` -> `Add project from disk`, select the project directory<br>
 Unity Editor will start and import necessary packages like `MLAgents` and `TextMeshPro`
 
-### Install Unity Asset [15 Original Wood Texture]("https://assetstore.unity.com/packages/2d/textures-materials/wood/15-original-wood-texture-71286)
+#### Install Unity Asset [15 Original Wood Texture]("https://assetstore.unity.com/packages/2d/textures-materials/wood/15-original-wood-texture-71286)
 
 - Open the Unity Asset Store with the link above (you might need to Login)
 - Click `Open Asset in Unity`
@@ -40,7 +40,7 @@ Unity Editor will start and import necessary packages like `MLAgents` and `TextM
 - After successful import, you should see a folder `Assets/Original Wood Texture` in the project tab
 - close the Package Manager
 
-### Add textures to the maze
+#### Add textures to the maze
 - In the project tab, open folder `Assets/_marble-maze/prefabs` and double click on `Box 1`
 - In the project tab, open folder `Asset/Original Wood Texture/Wood Texture 13`  
 - Select the following parts of `Box 1` and drag `Wood Texture 13 (diffuse)` to the inspector tab:
