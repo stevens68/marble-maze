@@ -1,12 +1,14 @@
 # marble-maze
-Unity project with MLAgents. AI learns to control a maze. 
+Unity project with MLAgents. AI learns to control a maze. There's a youtube [video](https://www.youtube.com/watch?v=cCJV7BnXND8) with the result.
+
+![image](img/youtube-video-gif.gif)
 
 ## Overview
 
 In this project a model can be trained to tilt the two planes of a maze, so that a marble finds its way to the target. The maze has been developed with Unity and ML Agents.
 
 
-![image](files:img/UnityEditor.jpg)
+![image](img/UnityEditor.jpg)
 
 ### requirements
 
