@@ -59,7 +59,7 @@ To run the model, open Unity Editor
 - Double click `Asstes/_marble-maze/prefab/Box 1` in the project tab
 - In the hierarchy tab, select `Box 1/Outer Frame`
 - In the project tab, open `Asstes/_marble-maze/model`
-- Drag `MarbleMazeWalk-13589150` to the `Model` field in section `Behaviour Parameters` in the isnspector tab
+- Drag `MarbleMazeWalk` to the `Model` field in section `Behaviour Parameters` in the isnspector tab
 - Select `Behaviour Type` = `Inference only`
 - Select the `Game` view and click the `Play`-Button
 - After a few seconds, you should see the marble starting to run
@@ -103,12 +103,12 @@ To run the model, open Unity Editor
 
 ### Stop a training run
 
-- Press `Ctrl-C` in the command window where you started `mlagent-learn`
+- Press `Ctrl-C` in the command window where you started `mlagents-learn`
 
 ### Resume a training run
 
 - In the virtual environment, to resume training run `r101`
-  `(myvenv) > mlagent-learn --run-id=r101 --resume`<br>
+  `(myvenv) > mlagents-learn --run-id=r101 --resume`<br>
 
 ### Adjust meta-parameters
 
@@ -131,7 +131,7 @@ The ML Agent receives the state of the marble. The state space is continuous, sh
 - 2nd dimension: angular velocity (x, y, z)
 - 3rd dimension: velocity (x, y, z)
 
-Note, that the position of the planes is not part of a state as the position of the marble implies it.
+Note, that the tilt angle of the planes is not part of a state.
 
 ### rewards
 
