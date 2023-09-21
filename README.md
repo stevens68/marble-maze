@@ -3,7 +3,10 @@ Unity project with MLAgents. AI learns to control a maze.
 
 ## Overview
 
-In this project a model can be trained to tilt the two planes of a maze, so that a marble finds its way to the target. The maze has been developed with Unity + ML Agents-
+In this project a model can be trained to tilt the two planes of a maze, so that a marble finds its way to the target. The maze has been developed with Unity and ML Agents.
+
+
+![image](files:img/UnityEditor.jpg)
 
 ### requirements
 
@@ -37,14 +40,14 @@ Unity Editor will start and import necessary packages like `MLAgents` and `TextM
 
 ### Add textures to the maze
 - In the project tab, open folder `Assets/_marble-maze/prefabs` and double click on `Box 1`
-- In the project tab, open folder `Asset\Original Wood Texture\Wood Texture 13`  
+- In the project tab, open folder `Asset/Original Wood Texture/Wood Texture 13`  
 - Select the following parts of `Box 1` and drag `Wood Texture 13 (diffuse)` to the inspector tab:
-  - `Box 1\Sides\*`
-  - `Box 1\Outer Frame\Sides\*`
-  - `Box 1\Outer Frame\Inner Frame\Sides\*`
-  - `Box 1\Outer Frame\Inner Frame\Board`
+  - `Box 1/Sides/*`
+  - `Box 1/Outer Frame/Sides/*`
+  - `Box 1/Outer Frame/Inner Frame/Sides/*`
+  - `Box 1/Outer Frame/Inner Frame/Board`
 - Select the following parts of `Box 1` and drag `Wood Texture 06 (diffuse)` to the inspector tab:
-  - `Box 1\Outer Frame\Inner Frame\Walls\*`
+  - `Box 1/Outer Frame/Inner Frame/Walls/*`
 
 ## Running a model (inference)
 
@@ -52,13 +55,13 @@ I put a trained model in this repository that can be used for inference. It's no
 perfect though, i.e. the marble will reach the target in many but not all runs.
 
 To run the model, open Unity Editor
-- Double click `Asstes\_marble-maze\prefab\Box 1` in the project tab
-- In the hierarchy tab, select `Box 1\Outer Frame`
-- In the project tab, open `Asstes\_marble-maze\model`
-- Drag `MarbleMazeWalk-13589150` to the `Model` field in section `Behaviour Parameters`
+- Double click `Asstes/_marble-maze/prefab/Box 1` in the project tab
+- In the hierarchy tab, select `Box 1/Outer Frame`
+- In the project tab, open `Asstes/_marble-maze/model`
+- Drag `MarbleMazeWalk-13589150` to the `Model` field in section `Behaviour Parameters` in the isnspector tab
 - Select `Behaviour Type` = `Inference only`
 - Select the `Game` view and click the `Play`-Button
-- After a few seconds, you should see the marble start to run
+- After a few seconds, you should see the marble starting to run
 
 
 ## Training
@@ -87,7 +90,7 @@ To run the model, open Unity Editor
 
 ### Start a training run
 
-- In Unity editor, make sure that prefab `Box 1\Outer Frame` has `Behaviour Type` = `Default` (not `Inference only`)
+- In Unity editor, make sure that prefab `Box 1/Outer Frame` has `Behaviour Type` = `Default` (not `Inference only`)
 - In the virtual environment, to start training run `r101`<br>
   `(myvenv) > mlagent-learn --run-id=r101 config\marble-maze.yaml`<br>
   This will start a server lstening on port 5004 by default
@@ -99,14 +102,14 @@ To run the model, open Unity Editor
 
 ### Stop a training run
 
-- Press `Ctr-C` in the Command window where you started `mlagent-learn`
+- Press `Ctrl-C` in the command window where you started `mlagent-learn`
 
 ### Resume a training run
 
 - In the virtual environment, to resume training run `r101`
   `(myvenv) > mlagent-learn --run-id=r101 --resume`<br>
 
-### Adjust meta-parameters of a training run
+### Adjust meta-parameters
 
 - Create a copy of `config\marble-maze.yaml` and edit the parameters
 - Start a new training run with the new config file
