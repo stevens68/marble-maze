@@ -56,7 +56,7 @@ I put a trained model in this repository that can be used for inference. It's no
 perfect though, i.e. the marble will reach the target in many but not all runs.
 
 To run the model, open Unity Editor
-- Double click `Asstes/_marble-maze/prefab/Box 1` in the project tab
+- Double click `Assets/_marble-maze/prefab/Box 1` in the project tab
 - In the hierarchy tab, select `Box 1/Outer Frame`
 - In the project tab, open `Asstes/_marble-maze/model`
 - Drag `MarbleMazeWalk` to the `Model` field in section `Behaviour Parameters` in the isnspector tab
